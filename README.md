@@ -1,1 +1,1 @@
-# VibeCodingTemplate
+# AICodingTemplate
