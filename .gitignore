@@ -1,0 +1,95 @@
+# ==========================================
+# OSPanel / local server artifacts
+# ==========================================
+*.pid
+*.sock
+
+# ==========================================
+# SQLite база данных
+# ==========================================
+database/database.sqlite
+database/database.sqlite-shm
+database/database.sqlite-wal
+database/*.bak*
+
+# ==========================================
+# Загруженные пользователями файлы
+# ==========================================
+uploads/avatars/*
+uploads/lessons/*
+uploads/training-icons/*
+!uploads/avatars/.gitkeep
+!uploads/lessons/.gitkeep
+!uploads/training-icons/.gitkeep
+
+# ==========================================
+# Хранилище: логи, кеш, временные файлы
+# ==========================================
+storage/logs/*
+storage/cache/*
+storage/temp/*
+storage/mail-log/*
+!storage/logs/.gitkeep
+!storage/cache/.gitkeep
+!storage/temp/.gitkeep
+!storage/mail-log/.gitkeep
+/cache/
+/logs/
+
+# ==========================================
+# Конфиги с чувствительными данными
+# ==========================================
+config/local.php
+config/secrets.php
+.env
+.env.*
+.env.local
+!.env.example
+
+# ==========================================
+# Архивы и бэкапы
+# ==========================================
+*.zip
+*.tar.gz
+*.tar
+*.bak
+*.bak*
+*.sql.bak
+
+# ==========================================
+# macOS
+# ==========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ==========================================
+# Windows
+# ==========================================
+desktop.ini
+
+# ==========================================
+# IDE / редакторы
+# ==========================================
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# ==========================================
+# На будущее: Composer / Node (если появятся)
+# ==========================================
+/vendor/
+/node_modules/
+composer.phar
+
+# ==========================================
+# Разное
+# ==========================================
+*.log
+*.tmp
+*.temp
+Thumbs.db

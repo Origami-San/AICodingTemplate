@@ -1,0 +1,20 @@
+Options -Indexes
+
+RewriteEngine On
+
+# Serve existing files and directories directly (assets, uploads, etc.)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Route everything else through index.php
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# Security: deny access to sensitive files
+<FilesMatch "\.(sqlite|sql|log|md|tpl)$">
+    Require all denied
+</FilesMatch>
+
+# Security: deny direct access to PHP files outside root
+<FilesMatch "^(?!index).*\.php$">
+    Require all denied
+</FilesMatch>
