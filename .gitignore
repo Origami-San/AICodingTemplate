@@ -93,3 +93,5 @@ composer.phar
 *.tmp
 *.temp
 Thumbs.db
+__pycache__/
+*.pyc
